@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "setuptools_scm[toml]>=6.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "QdrantSync"
+version = "0.1.0"
+description = "A powerful and flexible CLI tool to migrate data between Qdrant instances."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Francisco Jimenez Cabrera", email = "jkfran@gmail.com" }]
+keywords = ["qdrant", "migration", "sync", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+requires-python = ">=3.7"
+dependencies = ["click>=8.1.8", "qdrant-client>=1.12.2", "tqdm>=4.67.1"]
+
+[project.scripts]
+qdrantsync = "qdrantsync:migrate_qdrant"
