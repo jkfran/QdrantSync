@@ -30,7 +30,7 @@
 
 ### Installation
 
-#### (A) From PyPI (once available)
+#### From PyPI
 
 ```bash
 pip install QdrantSync
